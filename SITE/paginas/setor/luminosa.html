@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Paróquia São Caetano</title>
+		<link rel ="stylesheet" type ="text/css" href ="../../CSS/estilo1.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script language=javascript type="text/javascript">
+			diaNome = new Array ("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado");
+			mesNome = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho","julho","agosto","setembro","outubro", "novembro", "dezembro");
+			now = new Date;
+		</script>
+	</head>
+	<body>
+		<!--Tag <nav></nav> agrupa blocos de links de um mesmo assunto ou links internos do site-->
+		<nav>
+			<ul class="menu">
+				<li><a href="../../index.php">A Paróquia</a>
+					<ul >
+						<li><a href="../padroeiro.html">Padroeiro</a></li>
+						<li><a href="../paroco.html">Pároco</a></li>
+						<li><a href="../vigario.html">Vigário Paroquial</a></li>
+						<li><a href="../programacao.html">Programação Paroquial</a></li>
+					</ul>
+				</li>
+				<li><a href="../../index.php">Comunidades</a>
+					<ul>
+						<li><a href="matriz.html">Setor Matriz</a></li>
+						<li><a href="santuario.html">Setor Santuário</a></li>
+						<li><a href="bomSucesso.html">Setor Bom Sucesso</a></li>
+						<li><a href="cachoeira.html">Setor Cachoeira</a></li>
+						<li><a href="farias.html">Setor Farias</a></li>
+						<li><a href="teodoros.html">Setor Teodoros</a></li>
+						<li><a href="luminosa.html">Setor Luminosa</a></li>
+						<li><a href="freiorestes.html">Setor Frei Orestes</a></li>
+					</ul>
+				</li>
+				<li><a href="../../index.php">Pastorais</a>
+					<ul>
+						<li><a href="../pastorais/catequetica.html">Pastoral Catequética</a></li>
+						<li><a href="../pastorais/comunicacao.html">Pastoral da Comunicação</a></li>
+						<li><a href="../pastorais/crianca.html">Pastoral da Criança</a></li>
+						<li><a href="../pastorais/esperanca.html">Pastoral da Esperança</a></li>
+						<li><a href="../pastorais/juventude.html">Pastoral da Juventude</a></li>
+						<li><a href="../pastorais/batismo.html">Pastoral do Batismo</a></li>
+						<li><a href="../pastorais/carente.html">Pastoral do Carente</a></li>
+						<li><a href="../pastorais/dizimo.html">Pastoral do Dízimo</a></li>
+						<li><a href="../pastorais/familiar.html">Pastoral Familiar</a></li>
+						<li><a href="../pastorais/vocacional.html">Pastoral Vocacional</a></li>
+					</ul>
+				</li>
+				<li><a href="../../index.php">Movimentos</a>
+					<ul>
+						<li><a href="../movimentos/apostolado.html">Apostolado da Oração</a></li>
+						<li><a href="../movimentos/infanciaAdomissionaria.html">Infância e Adolescência Missionária</a></li>
+						<li><a href="../movimentos/legMaria.html">Legião de Maria</a></li>
+						<li><a href="../movimentos/ligaMae.html">Liga Apostólica das mães de Schoenstatt</a></li>
+						<li><a href="../movimentos/ligaFem.html">Liga Apostólica Feminina de Schoenstatt</a></li>
+						<li><a href="../movimentos/movMaePeregrina.html">Movimento Mãe Peregrina</a></li>
+						<li><a href="../movimentos/movGuadalupe.html">Movimento Nossa Sra. de Guadalupe</a></li>
+						<li><a href="../movimentos/rcc.html">RCC</a></li>
+						<li><a href="../movimentos/tercoHomem.html">Terço dos Homens</a></li>
+						<li><a href="../movimentos/tercoSantuario.html">Terço do Santuário</a></li>
+						<li><a href="../movimentos/tercoMulher.html">Terço das Mulheres</a></li>
+						<li><a href="../movimentos/vicentino.html">Vicentinos</a></li>
+					</ul>
+				</li>
+				<li><a href="../../index.php">Ministérios</a>
+					<ul>
+						<li><a href="../ministerios/acolito.html">Acólitos</a></li>
+						<li><a href="../ministerios/coroinha.html">Coroinhas</a></li>
+						<li><a href="../ministerios/canto.html">Equipe de Canto</a></li>
+						<li><a href="../ministerios/celMatrimonio.html">Equipe de celebração matrimonial</a></li>
+						<li><a href="../ministerios/epal.html">EPAL</a></li>
+						<li><a href="../ministerios/palavra.html">Ministério da Palavra</a></li>
+						<li><a href="../ministerios/eucaristia.html">Ministros da Eucaristia</a></li>
+						<li><a href="../ministerios/assessor.html">Assessores</a></li>
+					</ul>
+				</li>
+				<li><a href="../historia.html">História</a></li>
+				<li><a href="../contato.html">Contato</a></li>
+			</ul>
+		</nav>
+		<div id="div1">
+			<img src="../../img/caetano.png" id="icone"/>
+			<img src="../../img/nome.png" id="nome"/>
+		</div>
+		<nav>
+			<ul class="cabecalho">
+				<li><a href="../linksCabecalho/calendarioMensal.html">Calendário Mensal</a></li>
+				<li><a href="../linksCabecalho/oracao.html">Orações</a></li>
+				<li><a href="../linksCabecalho/evangelhoDia.html">Liturgia diária</a></li>
+				<li><a href="../linksCabecalho/links.html">links uteis</a></li>
+			</ul>
+		</nav>
+		<nav>
+			<h3 id="data">
+				<script language="javascript" type="text/javascript">
+					//mostra a data e dia da semana atual
+					document.write (diaNome[now.getDay() ] + ", " + now.getDate () + " de " + mesNome [now.getMonth() ]   +  " de "  +     now.getFullYear ());
+				</script>
+			</h3>
+		</nav>
+		<div id="corpo">
+			<h2>SETOR LUMINOSA</h2>
+			<div id="box">
+				<!--<img src="../../img/.jpg" id="setor" align="right"/>-->
+				<h2>Comunidade Bentos (Padroeiro Sagrado Coração de Jesus)</h2>
+				<p>
+					<b>Coordenador:</b> Crebes Elizandro do Amaral</br>
+					<b>Secretária e Tesoureira:</b> Maria Gorete Faria da Silva</br>
+					<b>Demais membros do Conselho:</b></br>
+					Sebastião Raimundo Lúcio</br>
+					Arnaldo Ferreira Gonçalves</br>
+					<b>Ministro(a) da Eucaristia:</b> Rosalina Vaz C. Amaral</br>
+					<b>Catequese:</b> Ana Carolina Lúcio</br>
+					<b>Catequese de Batismo:</b> Maria Gorete Faria da Silva e Mara Desidério da Silva</br>
+					<b>Liturgia:</b> Valéria Norberto da Silva Amaral</br>
+					<b>Dízimo:</b> Maria Gorete Faria da Silva
+				</p>
+			</div></br>
+			<div id="box">
+				<!--<img src="../../img/.jpg" id="setor" align="right"/>-->
+				<h2>Comunidade Lúcios (Padroeiro São Benedito)</h2>
+				<p>
+					<b>Coordenador:</b> Paulo Manoel Rodrigues</br>
+					<b>Secretária:</b> Maria Bernadete de Sá</br>
+					<b>Tesoureira:</b> Ana Paula Soares</br>
+					<b>Demais membros do Conselho:</b></br>
+					Ederson Magalhães Ferreira</br>
+					Arnaldo Ferreira Gonçalves</br>
+					Idalina Lúcia Ferreira</br>
+					Roberto Abel Maurício</br>
+					<b>Ministro(a) da Eucaristia:</b> Maria Bernadete de Sá</br>
+					<b>Catequese:</b> Paulo Manoel Rodrigues</br>
+					<b>Liturgia:</b> Maria Bernadete de Sá e Paulo Manoel Rodrigues</br>
+					<b>Terço das Mulheres:</b> Idalina Lúcia Ferreira</br>
+					<b>Terço dos Homens:</b> Roberto Abel Maurício
+				</p>
+			</div></br>
+			<div id="box">
+				<img src="../../img/igrejaluminosa.jpg" id="setor" align="right"/>
+				<h2>Comunidade Luminosa (Padroeira N. Sra. das Candeias)</h2>
+				<p>
+					<b>Coordenadora:</b> Nazaré Antunes da Silva</br>
+					<b>Vice-coordenadora:</b> Maria Lúcia Monte Sião Rosa</br>
+					<b>Secretária:</b> Maria Helena Cintra</br>
+					<b>Tesoureira:</b> Regilene Magalhães Ferreira Dias</br>
+					<b>Demais membros do Conselho:</b></br>
+					Edvirges Claudinéia Faria Arruda</br>
+					Sebastiana Ricarda da Fonseca</br>
+					Maria Anunciata dos Santos</br>
+					Benedita Claudina Guedes</br>
+					Antônio Francisco Lemes</br>
+					Jésus Aparecido da Silva</br>
+					<b>Ministro(a) da Eucaristia:</b> Benedita Pereira Faria Carneiro</br>
+					<b>Catequese:</b> Ildicéia Leopoldino de Lima</br>
+					<b>Catequese de Batismo:</b> Maria Helena Cintra</br>
+					<b>Ministério de Música:</b> Nazaré Antunes da Silva</br>
+					<b>Liturgia:</b> Maria Lúcia Monte Sião Rosa</br>
+					<b>Dízimo:</b> Regilene Magalhães Ferreira Dias / Sebastiana Ricarda da Fonseca</br>
+					<b>Movimento Mãe Peregrina:</b> Edvirges Claudinéia Faria Arruda</br>
+					<b>Legião de Maria:</b> Maria Anunciata dos Santos</br>
+					<b>Juventude:</b> Benedita Claudina Guedes</br>
+					<b>Terço dos Homens:</b> Antônio Francisco Lemes</br>
+					<b>RCC:</b> Ederson Magalhães Ferreira
+				</p>
+			</div></br>
+			<div id="box">
+				<!--<img src="../../img/.jpg" id="setor" align="right"/>-->
+				<h2>Comunidade Paiolzinho(Padroeiro Santo Antônio)</h2>
+				<p>
+				</p>
+			</div></br>
+			<div id="box">
+				<!--<img src="../../img/.jpg" id="setor" align="right"/>-->
+				<h2>Comunidade Pinhalzinho (Padroeiro São Sebastião)</h2>
+				<p>
+				</p>
+			</div></br>
+			<div id="box">
+				<!--<img src="../../img/.jpg" id="setor" align="right"/>-->
+				<h2>Comunidade Quilombo (Padroeiro São Sebastião)</h2>
+				<p>
+					<b>Coordenador e Ministro(a) da Eucaristia:</b> Crebes Elizandro do Amaral
+				</p>
+			</div></br>
+			<div id="box">
+				<h2>Comunidade Sertãozinho(Padroeira N. Sra. da Rosa Mística)</h2>
+				<p>
+				</p>
+			</div>
+		</div>
+		<div id="rodape">
+			<img src="../../img/logo.png" id="logo"/>
+			<h4 id="txtrodape">Rua Dona Ana Chaves, 199 - Centro - Brazópolis - MG.</h4>
+			<h3 id="txtrodape">Fone:(35) 3641-1110 / psaocaetano@yahoo.com.br</h3>
+		</div>
+	</body>
+</html>
