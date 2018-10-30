@@ -10,7 +10,7 @@
 			mesNome = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho","julho","agosto","setembro","outubro", "novembro", "dezembro");
 			now = new Date;
 		</script>
-	<head>	
+	</head>	
 		<nav>
 			<ul class="menu">
 				<li><a href="index.php">A Paróquia</a>
@@ -103,7 +103,7 @@
 			<h1>Seja bem-vindo!</h1>
 			</br>
 			<div id="slides">
-				<iframe id="slide" src="slides.html"frameborder="0" align="center"></iframe>
+				<iframe id="slide" src="slide.php"frameborder="0" align="center"></iframe>
 				<h6>Igreja Matriz de São Caetano.</h6>
 			</div>
 		</div>
